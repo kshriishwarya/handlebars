@@ -1,59 +1,21 @@
-<!DOCTYPE html>
+  <!-- Hmtl -->
 <html>
-
 <head>
-  
- 
 </head>
-
 <body>
-  <!--Content div is used to render the compile code of handlebar -->
-  
-  <p id="content">Hello</p>
-  
-  <!-- note the type attribute of script tag. Without this, code will be treated as javascript code -->
-  <script id="template1" type="text/x-handlebars-template">
-  {{#each users}}
-  {{> user}}
- <!-- <ul><h1>{{first_name}} {{last_name}} {{phone}} {{email}}<h1></ul> -->
+  <div id="content-placeholder"></div>
+<script id="handlebars-template" type="text/x-handlebars-template">
+ {{#each users}}
+    {{> user}}
   {{/each}}
-  </script>
-
-  <!-- <script>
-    // var data = {templateEngine:"Handlebar",
-    // italicText:"<i>This text should be in italics</i>"
-    // };
-    
-    
-    // var data = {
-    //  users : [{first_name:"Raj",last_name:"Kumar",phone:"9486794858",email:"shriandshri1999@gmail.com"},
-    //      {first_name:"Selva",last_name:"Kumar",phone:"9486794858",email:"shriandshri1985@gmail.com"}]
-    
-    
+</script>
 
 
-    // }
-    
-      
-    //   //handlebar template html
-      
-    //  //var template=document.getElementById('template1').innerHTML;
-    //  var template = document.getElementById("template1").innerHTML;
-    //  //console.log(template)
-      
-    //   //handlebar's compile method returns special function which can be used to get final html
-    //   var compiledCode = Handlebars.compile(template);
-      
-    //  // json data is passed top compiled code and result will be html
-    //   var result = compiledCode(data);
-      
-    //  // compiled html can be rendered in document
-    //   $("#content").html(result);
-      
-    //   document.getElementById('content').innerHTML=result;
-      </script> -->
-      <script src="C:/Users/1839289/Documents/hb/node_modules/handlebars/dist/handlebars.min.js"></script>
-      <script src="C:/Users/1839289/Documents/hb/node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="script.js"></script>
-  </body>
+
+<script type = "text/javascript"
+   src = "lib/jquery/dist/jquery.js"></script>
+<script type = "text/javascript"
+   src = "lib/handlebars/hanldebars-v4.js"></script>
+<script  type = "text/javascript"  src="index.js"></script>
+</body>
 </html>
